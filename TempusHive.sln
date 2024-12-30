@@ -20,7 +20,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Occasions", "Occasions", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempusHive.Api", "src\API\TempusHive.Api\TempusHive.Api.csproj", "{275CDE30-EC22-429F-AAA3-7B56876F9B68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempusHive.Modules.Occasions.Api", "src\Modules\Events\TempusHive.Modules.Events.Api\TempusHive.Modules.Occasions.Api.csproj", "{B7E8B856-BB86-40EA-B56B-7E03647DD41B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempusHive.Modules.Occasions.Api", "src\Modules\Occasions\TempusHive.Modules.Occasions.Api\TempusHive.Modules.Occasions.Api.csproj", "{B7E8B856-BB86-40EA-B56B-7E03647DD41B}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{7AD118CB-CD2E-46C5-B2C8-C9539C71FD3D}"
 EndProject
