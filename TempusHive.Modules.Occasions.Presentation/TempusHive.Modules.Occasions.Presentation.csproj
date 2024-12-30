@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TempusHive.Modules.Occasions.Application\TempusHive.Modules.Occasions.Application.csproj" />
+  </ItemGroup>
+</Project>

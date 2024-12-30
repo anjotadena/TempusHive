@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using TempusHive.Modules.Occasions.Api.Database;
+using TempusHive.Modules.Occasions.Infrastructure.Database;
 
 namespace TempusHive.Api.Extensions;
 

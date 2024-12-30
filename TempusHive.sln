@@ -21,9 +21,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Occasions", "Occasions", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempusHive.Api", "src\API\TempusHive.Api\TempusHive.Api.csproj", "{275CDE30-EC22-429F-AAA3-7B56876F9B68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempusHive.Modules.Occasions.Api", "src\Modules\Occasions\TempusHive.Modules.Occasions.Api\TempusHive.Modules.Occasions.Api.csproj", "{B7E8B856-BB86-40EA-B56B-7E03647DD41B}"
-EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{7AD118CB-CD2E-46C5-B2C8-C9539C71FD3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempusHive.Modules.Occasions.Domain", "TempusHive.Modules.Occasions.Domain\TempusHive.Modules.Occasions.Domain.csproj", "{1106A5BB-8C4E-4FF4-A75A-60A4A3F228DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempusHive.Modules.Occasions.Application", "TempusHive.Modules.Occasions.Application\TempusHive.Modules.Occasions.Application.csproj", "{0A9BD8CD-5497-4B86-8793-CB4CF58AD931}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempusHive.Modules.Occasions.Infrastructure", "TempusHive.Modules.Occasions.Infrastructure\TempusHive.Modules.Occasions.Infrastructure.csproj", "{9A4FE77A-09D4-44CB-9F04-4988411B4482}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempusHive.Modules.Occasions.Presentation", "TempusHive.Modules.Occasions.Presentation\TempusHive.Modules.Occasions.Presentation.csproj", "{713C65ED-A4E6-4CDC-A2A6-DD09B4953A1C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,14 +41,26 @@ Global
 		{275CDE30-EC22-429F-AAA3-7B56876F9B68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{275CDE30-EC22-429F-AAA3-7B56876F9B68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{275CDE30-EC22-429F-AAA3-7B56876F9B68}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B7E8B856-BB86-40EA-B56B-7E03647DD41B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B7E8B856-BB86-40EA-B56B-7E03647DD41B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B7E8B856-BB86-40EA-B56B-7E03647DD41B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B7E8B856-BB86-40EA-B56B-7E03647DD41B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7AD118CB-CD2E-46C5-B2C8-C9539C71FD3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7AD118CB-CD2E-46C5-B2C8-C9539C71FD3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AD118CB-CD2E-46C5-B2C8-C9539C71FD3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AD118CB-CD2E-46C5-B2C8-C9539C71FD3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1106A5BB-8C4E-4FF4-A75A-60A4A3F228DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1106A5BB-8C4E-4FF4-A75A-60A4A3F228DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1106A5BB-8C4E-4FF4-A75A-60A4A3F228DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1106A5BB-8C4E-4FF4-A75A-60A4A3F228DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A9BD8CD-5497-4B86-8793-CB4CF58AD931}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A9BD8CD-5497-4B86-8793-CB4CF58AD931}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A9BD8CD-5497-4B86-8793-CB4CF58AD931}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A9BD8CD-5497-4B86-8793-CB4CF58AD931}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A4FE77A-09D4-44CB-9F04-4988411B4482}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A4FE77A-09D4-44CB-9F04-4988411B4482}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A4FE77A-09D4-44CB-9F04-4988411B4482}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A4FE77A-09D4-44CB-9F04-4988411B4482}.Release|Any CPU.Build.0 = Release|Any CPU
+		{713C65ED-A4E6-4CDC-A2A6-DD09B4953A1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{713C65ED-A4E6-4CDC-A2A6-DD09B4953A1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{713C65ED-A4E6-4CDC-A2A6-DD09B4953A1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{713C65ED-A4E6-4CDC-A2A6-DD09B4953A1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +70,9 @@ Global
 		{071D3470-6F03-41AF-BC56-853D31974B19} = {16745C1B-CED0-425C-B82F-348143EB80F6}
 		{EC148787-A163-4D17-B7B7-5676E9CBC8EB} = {071D3470-6F03-41AF-BC56-853D31974B19}
 		{275CDE30-EC22-429F-AAA3-7B56876F9B68} = {69FAD429-13B5-4C65-A44A-6FEFCBA79646}
-		{B7E8B856-BB86-40EA-B56B-7E03647DD41B} = {EC148787-A163-4D17-B7B7-5676E9CBC8EB}
+		{1106A5BB-8C4E-4FF4-A75A-60A4A3F228DC} = {EC148787-A163-4D17-B7B7-5676E9CBC8EB}
+		{0A9BD8CD-5497-4B86-8793-CB4CF58AD931} = {EC148787-A163-4D17-B7B7-5676E9CBC8EB}
+		{9A4FE77A-09D4-44CB-9F04-4988411B4482} = {EC148787-A163-4D17-B7B7-5676E9CBC8EB}
+		{713C65ED-A4E6-4CDC-A2A6-DD09B4953A1C} = {EC148787-A163-4D17-B7B7-5676E9CBC8EB}
 	EndGlobalSection
 EndGlobal

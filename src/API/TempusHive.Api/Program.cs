@@ -1,5 +1,5 @@
 using TempusHive.Api.Extensions;
-using TempusHive.Modules.Occasions.Api;
+using TempusHive.Modules.Occasions.Infrastructure;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 

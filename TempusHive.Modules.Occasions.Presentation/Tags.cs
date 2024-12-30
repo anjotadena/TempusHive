@@ -1,4 +1,4 @@
-﻿namespace TempusHive.Modules.Occasions.Api;
+﻿namespace TempusHive.Modules.Occasions.Presentation;
 
 internal static class Tags
 {

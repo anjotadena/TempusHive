@@ -1,4 +1,4 @@
-﻿namespace TempusHive.Modules.Occasions.Api.Database;
+﻿namespace TempusHive.Modules.Occasions.Infrastructure.Database;
 
 internal static class Schemas
 {

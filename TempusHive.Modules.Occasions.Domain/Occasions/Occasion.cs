@@ -1,4 +1,4 @@
-﻿namespace TempusHive.Modules.Occasions.Api.Occasions;
+﻿namespace TempusHive.Modules.Occasions.Domain.Occasions;
 
 public sealed class Occasion
 {

@@ -2,21 +2,18 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using TempusHive.Modules.Occasions.Api.Database;
+using TempusHive.Modules.Occasions.Infrastructure.Database;
 
 #nullable disable
 
 namespace TempusHive.Modules.Occasions.Api.Database.Migrations
 {
     [DbContext(typeof(OccasionsDbContext))]
-    [Migration("20241230135139_Create_Database")]
-    partial class Create_Database
+    partial class OccasionsDbContextModelSnapshot : ModelSnapshot
     {
-        /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

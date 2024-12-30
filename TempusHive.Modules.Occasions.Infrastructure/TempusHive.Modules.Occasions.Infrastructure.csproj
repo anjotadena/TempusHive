@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="EFCore.NamingConventions" Version="9.0.0" />
+		<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.2" />
+	</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TempusHive.Modules.Occasions.Application\TempusHive.Modules.Occasions.Application.csproj" />
+    <ProjectReference Include="..\TempusHive.Modules.Occasions.Presentation\TempusHive.Modules.Occasions.Presentation.csproj" />
+  </ItemGroup>
+
+</Project>
