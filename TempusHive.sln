@@ -16,11 +16,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{69FAD429-13B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{071D3470-6F03-41AF-BC56-853D31974B19}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Occasion", "Occasion", "{EC148787-A163-4D17-B7B7-5676E9CBC8EB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Occasions", "Occasions", "{EC148787-A163-4D17-B7B7-5676E9CBC8EB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempusHive.Api", "src\API\TempusHive.Api\TempusHive.Api.csproj", "{275CDE30-EC22-429F-AAA3-7B56876F9B68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempusHive.Modules.Occasion.Api", "src\Modules\Events\TempusHive.Modules.Events.Api\TempusHive.Modules.Occasion.Api.csproj", "{B7E8B856-BB86-40EA-B56B-7E03647DD41B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempusHive.Modules.Occasions.Api", "src\Modules\Events\TempusHive.Modules.Events.Api\TempusHive.Modules.Occasions.Api.csproj", "{B7E8B856-BB86-40EA-B56B-7E03647DD41B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
