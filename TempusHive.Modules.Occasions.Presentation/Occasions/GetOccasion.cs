@@ -2,8 +2,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
-using TempusHive.Modules.Occasions.Api;
-using TempusHive.Modules.Occasions.Api.Occasions;
+using TempusHive.Modules.Occasions.Application.Occasions.GetOccasion;
 
 namespace TempusHive.Modules.Occasions.Presentation.Occasions;
 

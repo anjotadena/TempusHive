@@ -1,18 +1,42 @@
-﻿namespace TempusHive.Modules.Occasions.Domain.Occasions;
+﻿using TempusHive.Modules.Occasions.Domain.Abstractions;
 
-public sealed class Occasion
+namespace TempusHive.Modules.Occasions.Domain.Occasions;
+
+public sealed class Occasion : Entity
 {
-    public Guid Id { get; set; }
+    public Occasion()
+    {
+    }
 
-    public string Title { get; set; }
+    public Guid Id { get; private set; }
 
-    public string Description { get; set; }
+    public string Title { get; private set; }
 
-    public string Location { get; set; }
+    public string Description { get; private set; }
 
-    public DateTime StartsAtUtc { get; set; }
+    public string Location { get; private set; }
 
-    public DateTime? EndsAtUtc { get; set; }
+    public DateTime StartsAtUtc { get; private set; }
 
-    public OccasionStatus Status { get; set; }
+    public DateTime? EndsAtUtc { get; private set; }
+
+    public OccasionStatus Status { get; private set; }
+
+    public static Occasion Create(string title, string description, string location, DateTime startsAtUtc, DateTime? endsAtUtc)
+    {
+        var occasion = new Occasion
+        {
+            Id = Guid.NewGuid(),
+            Title = title,
+            Description = description,
+            Location = location,
+            StartsAtUtc = startsAtUtc,
+            EndsAtUtc = endsAtUtc,
+            Status = OccasionStatus.Draft
+        };
+
+        occasion.Raise(new OccasionCreatedDomainEvent(occasion.Id));
+
+        return occasion;
+    }
 }

@@ -3,9 +3,7 @@ using Dapper;
 using MediatR;
 using TempusHive.Modules.Occasions.Application.Abstractions;
 
-namespace TempusHive.Modules.Occasions.Api.Occasions;
-
-public sealed record GetOccasionQuery(Guid OccasionId) : IRequest<OccasionResponse?>;
+namespace TempusHive.Modules.Occasions.Application.Occasions.GetOccasion;
 
 internal sealed class GetOccasionQueryHandler(IDbConnectionFactory dbConnectionFactory) : IRequestHandler<GetOccasionQuery, OccasionResponse?>
 {
@@ -13,7 +11,7 @@ internal sealed class GetOccasionQueryHandler(IDbConnectionFactory dbConnectionF
     {
         await using DbConnection connection = await dbConnectionFactory.OpenConnectionAsync();
 
-        const string sql = 
+        const string sql =
             $"""
             SELECT
                 id as {nameof(OccasionResponse.Id)},
