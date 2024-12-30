@@ -1,0 +1,21 @@
+services:
+  tempushive.api:
+    image: ${DOCKER_REGISTRY-}tempushiveapi
+    container_name: TempusHive.Api
+    build:
+      context: .
+      dockerfile: src/API/TempusHive.Api/Dockerfile
+    ports:
+      - 5000:8080
+      - 5001:8081
+  tempushiveapi.database:
+    image: postgres:latest
+    container_name: TempusHive.Database
+    environment:
+      - POSTGRES_DB=tempushive
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - ./.containers/db:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
