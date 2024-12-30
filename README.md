@@ -62,7 +62,7 @@ TempusHive follows a **Monolith Modular Architecture** where the application is 
    ```json
    {
      "ConnectionStrings": {
-       "DefaultConnection": "Host=localhost;Port=5432;Database=TempusHiveDb;Username=your_username;Password=your_password"
+       "Database": "Host=localhost;Port=5432;Database=TempusHiveDb;Username=your_username;Password=your_password"
      }
    }
    ```
