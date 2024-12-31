@@ -23,13 +23,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempusHive.Api", "src\API\T
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{7AD118CB-CD2E-46C5-B2C8-C9539C71FD3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempusHive.Modules.Occasions.Domain", "TempusHive.Modules.Occasions.Domain\TempusHive.Modules.Occasions.Domain.csproj", "{1106A5BB-8C4E-4FF4-A75A-60A4A3F228DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempusHive.Modules.Occasions.Domain", "src\Modules\Occasions\TempusHive.Modules.Occasions.Domain\TempusHive.Modules.Occasions.Domain.csproj", "{1106A5BB-8C4E-4FF4-A75A-60A4A3F228DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempusHive.Modules.Occasions.Application", "TempusHive.Modules.Occasions.Application\TempusHive.Modules.Occasions.Application.csproj", "{0A9BD8CD-5497-4B86-8793-CB4CF58AD931}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempusHive.Modules.Occasions.Application", "src\Modules\Occasions\TempusHive.Modules.Occasions.Application\TempusHive.Modules.Occasions.Application.csproj", "{0A9BD8CD-5497-4B86-8793-CB4CF58AD931}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempusHive.Modules.Occasions.Infrastructure", "TempusHive.Modules.Occasions.Infrastructure\TempusHive.Modules.Occasions.Infrastructure.csproj", "{9A4FE77A-09D4-44CB-9F04-4988411B4482}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempusHive.Modules.Occasions.Infrastructure", "src\Modules\Occasions\TempusHive.Modules.Occasions.Infrastructure\TempusHive.Modules.Occasions.Infrastructure.csproj", "{9A4FE77A-09D4-44CB-9F04-4988411B4482}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempusHive.Modules.Occasions.Presentation", "TempusHive.Modules.Occasions.Presentation\TempusHive.Modules.Occasions.Presentation.csproj", "{713C65ED-A4E6-4CDC-A2A6-DD09B4953A1C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempusHive.Modules.Occasions.Presentation", "src\Modules\Occasions\TempusHive.Modules.Occasions.Presentation\TempusHive.Modules.Occasions.Presentation.csproj", "{713C65ED-A4E6-4CDC-A2A6-DD09B4953A1C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

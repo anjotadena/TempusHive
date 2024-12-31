@@ -19,6 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\TempusHive.Modules.Occasions.Infrastructure\TempusHive.Modules.Occasions.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Modules\Occasions\TempusHive.Modules.Occasions.Infrastructure\TempusHive.Modules.Occasions.Infrastructure.csproj" />
   </ItemGroup>
 </Project>
