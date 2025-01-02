@@ -1,6 +1,6 @@
 ﻿using System.Data.Common;
 using Npgsql;
-using TempusHive.Modules.Occasions.Application.Abstractions;
+using TempusHive.Common.Application.Data;
 
 namespace TempusHive.Modules.Occasions.Infrastructure.Data;
 

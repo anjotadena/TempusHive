@@ -1,7 +1,7 @@
 ﻿using System.Data.Common;
 using Dapper;
 using MediatR;
-using TempusHive.Modules.Occasions.Application.Abstractions;
+using TempusHive.Common.Application.Data;
 
 namespace TempusHive.Modules.Occasions.Application.Occasions.GetOccasion;
 

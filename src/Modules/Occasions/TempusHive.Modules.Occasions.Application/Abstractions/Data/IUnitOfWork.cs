@@ -1,4 +1,4 @@
-﻿namespace TempusHive.Modules.Occasions.Application.Abstractions;
+﻿namespace TempusHive.Modules.Occasions.Application.Abstractions.Data;
 
 public interface IUnitOfWork
 {

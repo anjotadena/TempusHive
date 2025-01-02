@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using TempusHive.Modules.Occasions.Application.Abstractions;
+using TempusHive.Modules.Occasions.Application.Abstractions.Data;
 using TempusHive.Modules.Occasions.Domain.Categories;
 using TempusHive.Modules.Occasions.Domain.Occasions;
 using TempusHive.Modules.Occasions.Infrastructure.Repositories.Categories;

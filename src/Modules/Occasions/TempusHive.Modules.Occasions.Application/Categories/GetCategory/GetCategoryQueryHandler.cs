@@ -1,8 +1,8 @@
 ﻿using System.Data.Common;
 using Dapper;
-using TempusHive.Modules.Occasions.Application.Abstractions;
-using TempusHive.Modules.Occasions.Application.Abstractions.Messaging;
-using TempusHive.Modules.Occasions.Domain.Abstractions;
+using TempusHive.Common.Application.Data;
+using TempusHive.Common.Application.Messaging;
+using TempusHive.Common.Domain;
 using TempusHive.Modules.Occasions.Domain.Categories;
 
 namespace TempusHive.Modules.Occasions.Application.Categories.GetCategory;

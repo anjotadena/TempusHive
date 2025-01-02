@@ -1,4 +1,5 @@
-﻿using TempusHive.Modules.Occasions.Application.Abstractions.Messaging;
+﻿
+using TempusHive.Common.Application.Messaging;
 
 namespace TempusHive.Modules.Occasions.Application.Categories.CreateCategory;
 

@@ -1,4 +1,4 @@
-﻿using TempusHive.Modules.Occasions.Domain.Abstractions;
+﻿using TempusHive.Common.Domain;
 using TempusHive.Modules.Occasions.Domain.Categories;
 
 namespace TempusHive.Modules.Occasions.Domain.Occasions;

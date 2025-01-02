@@ -2,4 +2,7 @@
   <ItemGroup>
     <Folder Include="TicketTypes\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\TempusHive.Common.Domain\TempusHive.Common.Domain.csproj" />
+  </ItemGroup>
 </Project>

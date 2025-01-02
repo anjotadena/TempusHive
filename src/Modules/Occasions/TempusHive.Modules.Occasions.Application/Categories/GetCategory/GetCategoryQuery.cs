@@ -1,4 +1,4 @@
-﻿using TempusHive.Modules.Events.Application.Abstractions.Messaging;
+﻿using TempusHive.Common.Application.Messaging;
 
 namespace TempusHive.Modules.Occasions.Application.Categories.GetCategory;
 

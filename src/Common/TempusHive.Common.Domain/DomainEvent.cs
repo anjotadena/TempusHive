@@ -1,4 +1,4 @@
-﻿namespace TempusHive.Modules.Occasions.Domain.Abstractions;
+﻿namespace TempusHive.Common.Domain;
 
 public abstract class DomainEvent : IDomainEvent
 {

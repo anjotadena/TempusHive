@@ -1,4 +1,4 @@
-﻿using TempusHive.Modules.Occasions.Application.Abstractions.Clock;
+﻿using TempusHive.Common.Application.Clock;
 
 namespace TempusHive.Modules.Occasions.Infrastructure.Clock;
 

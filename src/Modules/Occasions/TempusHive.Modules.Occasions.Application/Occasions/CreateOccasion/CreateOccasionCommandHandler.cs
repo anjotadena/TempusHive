@@ -1,7 +1,7 @@
-﻿using TempusHive.Modules.Occasions.Application.Abstractions;
-using TempusHive.Modules.Occasions.Application.Abstractions.Clock;
-using TempusHive.Modules.Occasions.Application.Abstractions.Messaging;
-using TempusHive.Modules.Occasions.Domain.Abstractions;
+﻿using TempusHive.Common.Application.Clock;
+using TempusHive.Common.Application.Messaging;
+using TempusHive.Common.Domain;
+using TempusHive.Modules.Occasions.Application.Abstractions.Data;
 using TempusHive.Modules.Occasions.Domain.Categories;
 using TempusHive.Modules.Occasions.Domain.Occasions;
 

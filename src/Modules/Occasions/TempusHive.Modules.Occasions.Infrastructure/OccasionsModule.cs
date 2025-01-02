@@ -6,8 +6,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Npgsql;
-using TempusHive.Modules.Occasions.Application.Abstractions;
-using TempusHive.Modules.Occasions.Application.Abstractions.Clock;
+using TempusHive.Common.Application.Clock;
+using TempusHive.Common.Application.Data;
+using TempusHive.Modules.Occasions.Application.Abstractions.Data;
 using TempusHive.Modules.Occasions.Domain.Categories;
 using TempusHive.Modules.Occasions.Domain.Occasions;
 using TempusHive.Modules.Occasions.Infrastructure.Clock;
@@ -58,7 +59,9 @@ public static class OccasionsModule
                 dbConnectionString,
                 ngpsqlOptions => ngpsqlOptions.MigrationsHistoryTable(HistoryRepository.DefaultTableName, Schemas.Occasions)
             )
-            .UseSnakeCaseNamingConvention());
+            .UseSnakeCaseNamingConvention()
+            .AddInterceptors()
+        );
 
         services.AddScoped<IUnitOfWork>(s => s.GetRequiredService<OccasionsDbContext>());
         
