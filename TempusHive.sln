@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempusHive.Common.Applicati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempusHive.Common.Domain", "src\Common\TempusHive.Common.Domain\TempusHive.Common.Domain.csproj", "{01F4C5DD-8B43-49F5-8333-8DAD12AF74E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempusHive.Common.Infrastructure", "src\Common\TempusHive.Common.Infrastructure\TempusHive.Common.Infrastructure.csproj", "{FFD87227-2E6B-435A-81EB-8CBDBF928F48}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{01F4C5DD-8B43-49F5-8333-8DAD12AF74E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01F4C5DD-8B43-49F5-8333-8DAD12AF74E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01F4C5DD-8B43-49F5-8333-8DAD12AF74E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFD87227-2E6B-435A-81EB-8CBDBF928F48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFD87227-2E6B-435A-81EB-8CBDBF928F48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFD87227-2E6B-435A-81EB-8CBDBF928F48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFD87227-2E6B-435A-81EB-8CBDBF928F48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -91,5 +97,6 @@ Global
 		{92EE0369-EC86-40FF-8062-ECA3834FAAF7} = {16745C1B-CED0-425C-B82F-348143EB80F6}
 		{823C2D87-ED82-4C6C-9270-19ABBD9349EE} = {92EE0369-EC86-40FF-8062-ECA3834FAAF7}
 		{01F4C5DD-8B43-49F5-8333-8DAD12AF74E9} = {92EE0369-EC86-40FF-8062-ECA3834FAAF7}
+		{FFD87227-2E6B-435A-81EB-8CBDBF928F48} = {92EE0369-EC86-40FF-8062-ECA3834FAAF7}
 	EndGlobalSection
 EndGlobal

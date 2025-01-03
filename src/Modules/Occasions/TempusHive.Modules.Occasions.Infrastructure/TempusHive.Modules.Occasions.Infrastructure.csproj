@@ -7,6 +7,7 @@
 		<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.2" />
 	</ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\TempusHive.Common.Infrastructure\TempusHive.Common.Infrastructure.csproj" />
     <ProjectReference Include="..\TempusHive.Modules.Occasions.Application\TempusHive.Modules.Occasions.Application.csproj" />
     <ProjectReference Include="..\TempusHive.Modules.Occasions.Presentation\TempusHive.Modules.Occasions.Presentation.csproj" />
   </ItemGroup>

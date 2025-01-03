@@ -1,6 +1,6 @@
 ﻿using TempusHive.Common.Application.Clock;
 
-namespace TempusHive.Modules.Occasions.Infrastructure.Clock;
+namespace TempusHive.Common.Infrastructure.Clock;
 
 internal sealed class DateTimeProvider : IDateTimeProvider
 {

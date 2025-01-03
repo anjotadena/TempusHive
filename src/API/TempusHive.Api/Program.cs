@@ -1,5 +1,6 @@
 using TempusHive.Api.Extensions;
 using TempusHive.Common.Application;
+using TempusHive.Common.Infrastructure;
 using TempusHive.Modules.Occasions.Infrastructure;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
@@ -11,6 +12,8 @@ builder.Services.AddSwaggerGen(options =>
 });
 
 builder.Services.AddApplication([TempusHive.Modules.Occasions.Application.AssemblyReference.Assembly]);
+
+builder.Services.AddInfrastructure(builder.Configuration.GetConnectionString("Database")!);
 
 builder.Services.AddOccasionsModule(builder.Configuration);
 

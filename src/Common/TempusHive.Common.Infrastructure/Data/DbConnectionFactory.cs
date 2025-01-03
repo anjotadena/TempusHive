@@ -2,7 +2,7 @@
 using Npgsql;
 using TempusHive.Common.Application.Data;
 
-namespace TempusHive.Modules.Occasions.Infrastructure.Data;
+namespace TempusHive.Common.Infrastructure.Data;
 
 internal sealed class DbConnectionFactory(NpgsqlDataSource datasource) : IDbConnectionFactory
 {

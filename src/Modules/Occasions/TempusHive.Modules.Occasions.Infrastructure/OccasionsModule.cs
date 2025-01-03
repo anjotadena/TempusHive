@@ -4,15 +4,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection.Extensions;
-using Npgsql;
-using TempusHive.Common.Application.Clock;
-using TempusHive.Common.Application.Data;
 using TempusHive.Modules.Occasions.Application.Abstractions.Data;
 using TempusHive.Modules.Occasions.Domain.Categories;
 using TempusHive.Modules.Occasions.Domain.Occasions;
-using TempusHive.Modules.Occasions.Infrastructure.Clock;
-using TempusHive.Modules.Occasions.Infrastructure.Data;
 using TempusHive.Modules.Occasions.Infrastructure.Database;
 using TempusHive.Modules.Occasions.Infrastructure.Repositories.Categories;
 using TempusHive.Modules.Occasions.Infrastructure.Repositories.Occasions;
@@ -46,14 +40,7 @@ public static class OccasionsModule
     private static void AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
     {
         string dbConnectionString = configuration.GetConnectionString("Database");
-
-        NpgsqlDataSource npgsqlDataSource = new NpgsqlDataSourceBuilder(dbConnectionString).Build();
-
-        services.TryAddSingleton(npgsqlDataSource);
-
-        services.AddScoped<IDbConnectionFactory, DbConnectionFactory>();
-        services.TryAddSingleton<IDateTimeProvider, DateTimeProvider>();
-
+        
         services.AddDbContext<OccasionsDbContext>(options => options
             .UseNpgsql(
                 dbConnectionString,
