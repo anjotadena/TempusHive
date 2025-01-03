@@ -15,6 +15,8 @@ builder.Services.AddApplication([TempusHive.Modules.Occasions.Application.Assemb
 
 builder.Services.AddInfrastructure(builder.Configuration.GetConnectionString("Database")!);
 
+builder.Configuration.AddModuleConfiguration(["occasions"]);
+
 builder.Services.AddOccasionsModule(builder.Configuration);
 
 WebApplication app = builder.Build();
